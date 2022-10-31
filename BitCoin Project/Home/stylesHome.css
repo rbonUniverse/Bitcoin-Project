@@ -1,0 +1,248 @@
+
+html,
+body, #root {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    max-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*  */
+
+
+.headlineParallaxImg {
+    background-image: url('https://economictimes.indiatimes.com/thumb/msid-92171203,width-1600,height-1600,resizemode-4,imgsize-271908/top-cryptocurrency-prices-today-bitcoin-ethereum-hit-18-month-lows-avalanche-xrp-cardano-solana-plunge-up-to-15.jpg?from=mdr');
+
+    min-height: 680px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*  */
+
+
+.bodyParallaxImg {
+    background-image: url('https://d.newsweek.com/en/full/2036480/visual-representation-cryptocurrency-bitcoin.jpg?w=1600&h=1600&q=88&f=2739a4260dc7b4aa7b511799c7ad2b0a');
+
+    min-height: 680px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*  */
+
+
+#headline {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-top: 8%;
+    box-sizing: border-box;
+}
+
+
+#h-1 {
+    color: white !important;
+    font-size: 1000% !important;
+}
+
+
+#h-2 {
+    color: white !important;
+    font-size: 300% !important;
+    margin-left: 97px;
+    margin-top: 1.2cm;
+    margin-bottom: -60px !important;
+}
+
+
+
+
+/*  */
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 16%;
+}
+
+.arrow span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-bottom: 5px solid #ffffff;
+    border-right: 5px solid #ffffff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+/*  */
+
+
+
+
+.menu-buttons {
+    margin-top: 21px;
+    margin-bottom: 12px;
+}
+
+
+
+.refresh-button-class {
+    margin-left: 7px;
+}
+
+
+
+.btn-primary {
+    margin: 5px;
+}
+
+
+
+.d-flex {
+    margin-left: 0.5px;
+}
+
+
+
+.progress {
+    height: 5px;
+}
+
+
+
+.img-toggle {
+    display: grid;
+    grid-template-columns: 82% 18%;
+}
+
+
+
+.w-50 {
+    width: 300px !important;
+    height: 150px !important;
+    margin-bottom: 0.5cm;
+    margin-top: 0.5cm;
+    margin-left: 12px;
+}
+
+
+
+.title-id-info {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+
+
+.button-info {
+    margin-top: 0.90cm !important;
+}
+
+
+
+.infoClass {
+    position: absolute;
+    border: 1px solid;
+    z-index: 100;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+#coinCards {
+    margin-left: 12px;
+}
+
+
+
+img {
+    width: 35px;
+    height: 35px;
+}
+
+
+
+.modal-body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+
+h4 {
+    margin-left: 0.8cm;
+}
+
+
+
+#h-1{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: 0 !important;
+}
+
+
+#h-2{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.exchanges-class{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: -70px !important;
+    margin-left: 7.5cm !important;
+}
+
+
+.in-class{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-left: 15cm !important; 
+}
+
+
+.effort-class{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-left: 15cm !important; 
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesHome.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="headlineParallaxImg">
+            <br>
+            <div class="col-sm" id="headline">
+                <div class="row">
+                    <div id="h-2">
+                        Welcome to
+                    </div>
+                    <div class="col-sm" id="h-1">
+                        Cryptonite
+                    </div>
+                </div>
+                <div class="exchanges-class" id="h-2">
+                    Big Exchanges
+                </div>
+                <div class="in-class" id="h-2">
+                    in
+                </div>
+                <div class="effort-class" id="h-2">
+                    Small Effort
+                </div>
+            </div>
+            <br>
+        </div>
+
+
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="menu-buttons row">
+                <a class="btn btn-primary btn-sm col-sm fs-6" href="#" role="button">Home</a>
+                <a class="btn btn-primary btn-sm col-sm fs-6" href="../LiveReports/indexReports.html" role="button">Live
+                    Reports</a>
+                <a class="btn btn-primary btn-sm col-sm fs-6" href="../About/about.html" role="button">About</a>
+                <form class="d-flex sm row">
+                    <input id="search-field" class="form-control me-2 col-sm" type="search"
+                        placeholder="Search By Coin Code" aria-label="Search">
+                    <button onclick="searchButton()" class="btn btn-outline-primary btn-sm col-sm-3 fs-6"
+                        type="button">Search &nbsp&nbsp<span class="fs-5">🔍</span></button>
+                    <button onclick="refresh()"
+                        class="btn btn-outline-success btn-sm col-sm-3 refresh-button-class fs-6" type="button">Refresh
+                        &nbsp&nbsp<span class="fs-5">🔄</span></button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="bodyParallaxImg">
+            <div class="progress sticky-top"></div>
+            <br>
+            <div class="container px-3 py-3">
+                <div id="coinCards" class="row g-3"></div>
+            </div>
+        </div>
+        </div>
+
+
+
+        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
